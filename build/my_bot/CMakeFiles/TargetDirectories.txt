@@ -1,0 +1,9 @@
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/uninstall.dir
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/my_bot_uninstall.dir
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/test.dir
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/edit_cache.dir
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/rebuild_cache.dir
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/list_install_components.dir
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/install.dir
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/install/local.dir
+/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot/CMakeFiles/install/strip.dir

@@ -1,0 +1,72 @@
+[0.010s] Invoking command in '/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/ayush/Documents/dev_ws/src/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ayush/Documents/dev_ws/src/my_bot/install/my_bot
+[0.253s] -- The C compiler identification is GNU 11.4.0
+[0.455s] -- The CXX compiler identification is GNU 11.4.0
+[0.466s] -- Detecting C compiler ABI info
+[0.534s] -- Detecting C compiler ABI info - done
+[0.541s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.542s] -- Detecting C compile features
+[0.543s] -- Detecting C compile features - done
+[0.547s] -- Detecting CXX compiler ABI info
+[0.623s] -- Detecting CXX compiler ABI info - done
+[0.629s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.630s] -- Detecting CXX compile features
+[0.630s] -- Detecting CXX compile features - done
+[0.636s] -- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.783s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.846s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.888s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[0.968s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.991s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.991s] -- Configured cppcheck include dirs: 
+[0.991s] -- Configured cppcheck exclude dirs and/or files: 
+[1.003s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.003s] -- Configured cpplint exclude dirs and/or files: 
+[1.005s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.005s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.008s] -- Added test 'lint_cmake' to check CMake code style
+[1.010s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.023s] -- Added test 'uncrustify' to check C / C++ code style
+[1.023s] -- Configured uncrustify additional arguments: 
+[1.025s] -- Added test 'xmllint' to check XML markup files
+[1.026s] -- Configuring done
+[1.029s] -- Generating done
+[1.030s] -- Build files have been written to: /home/ayush/Documents/dev_ws/src/my_bot/build/my_bot
+[1.035s] Invoked command in '/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/ayush/Documents/dev_ws/src/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ayush/Documents/dev_ws/src/my_bot/install/my_bot
+[1.036s] Invoking command in '/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/ayush/Documents/dev_ws/src/my_bot/build/my_bot -- -j8 -l8
+[1.067s] Invoked command in '/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/ayush/Documents/dev_ws/src/my_bot/build/my_bot -- -j8 -l8
+[1.098s] Invoking command in '/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/ayush/Documents/dev_ws/src/my_bot/build/my_bot
+[1.107s] -- Install configuration: ""
+[1.107s] -- Execute custom install script
+[1.108s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/config/empty.yaml
+[1.118s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/config/just_bot.rviz
+[1.128s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/config/my_controllers.yaml
+[1.139s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/config/odom_view.rviz
+[1.148s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/config/view_bot.rviz
+[1.156s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/camera.xacro
+[1.164s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/depth_camera.xacro
+[1.171s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/gzebo_control.xacro
+[1.178s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/inertial_macros.xacro
+[1.186s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/lidar.xacro
+[1.193s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/robot.urdf.xacro
+[1.200s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/robot_core.xacro
+[1.208s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/ros2_control.xacro
+[1.215s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/launch/launch_sim.launch.py
+[1.223s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/launch/rsp.launch.py
+[1.231s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/worlds/empty.world
+[1.239s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/worlds/obstacles.world
+[1.247s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[1.255s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[1.262s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[1.270s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[1.277s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/environment/path.sh
+[1.285s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/environment/path.dsv
+[1.292s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/local_setup.bash
+[1.299s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/local_setup.sh
+[1.307s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/local_setup.zsh
+[1.314s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/local_setup.dsv
+[1.322s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/package.dsv
+[1.329s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[1.337s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[1.344s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[1.352s] -- Symlinking: /home/ayush/Documents/dev_ws/src/my_bot/install/my_bot/share/my_bot/package.xml
+[1.361s] Invoked command in '/home/ayush/Documents/dev_ws/src/my_bot/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/ayush/Documents/dev_ws/src/my_bot/build/my_bot

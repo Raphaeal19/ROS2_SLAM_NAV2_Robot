@@ -1,0 +1,3 @@
+gazebo:
+  ros__parameters:
+    publisg_rate: 400.0
