@@ -30,8 +30,6 @@ def generate_launch_description():
     )
 
     # Include the Gazebo launch file, provided by the gazebo_ros package
-
-
     gazebo_params_file = os.path.join(get_package_share_directory(package_name), 'config', 'gazebo_params.yaml')
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -57,6 +55,36 @@ def generate_launch_description():
         arguments=["joint_broad"]
     )
 
+    keyboard = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory(package_name), 'launch', 'keyboard.launch.py'
+        )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+    twist_mux_params = os.path.join(get_package_share_directory(package_name), 'config', 'twist_mux.yaml')
+    twist_mux = Node(
+        package='twist_mux',
+        executable="twist_mux",
+        parameters=[twist_mux_params, {'use_sim_time':True}],
+        remappings=[('/cmd_vel_out', 'diff_cont/cmd_vel_unstamped')]
+    )
+
+    online_async_params = os.path.join(get_package_share_directory(package_name), 'config', 'mapper_params_online_async.yaml')
+    online_async = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory(package_name), 'launch', 'online_async_launch.py'
+        )]), launch_arguments={'use_sim_time': 'true', 'slam_params_file':online_async_params}.items()
+    )
+
+    navigation_params = os.path.join(get_package_share_directory(package_name), 'config', 'nav2_params.yaml')
+    navigation = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory(package_name), 'launch', 'navigation_launch.py'
+        )]), launch_arguments={'use_sim_time': 'true', 'params_file': navigation_params}.items()
+    )
+
+
+
 
 
     # Launch them all!
@@ -66,8 +94,12 @@ def generate_launch_description():
             default_value='true',
             description='Use ros2_control if true'),
         rsp,
-        gazebo,
+        gazebo, 
         spawn_entity,
         diff_drive_spawner,
-        joint_broad_spawner
+        joint_broad_spawner,
+        keyboard,
+        twist_mux,
+        online_async,
+        navigation,
     ])
